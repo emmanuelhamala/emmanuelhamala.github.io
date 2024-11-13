@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamala Emmanuel</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      gap: 1rem;
+    }
+
+    .profile-picture img {
+      border-radius: 50%;
+      width: 100px;
+      height: auto;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex: 1;
+    }
+
+    .header-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Push nav to the far right */
+    nav {
+      margin-left: auto;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .education-list, .experience-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .education-item, .experience-item {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      .profile-picture img {
+        width: 80px;
+      }
+
+      .education-list, .experience-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-picture">
+      <img src="profile.jpg" alt="Hamala Emmanuel">
+    </div>
+    <div class="header-content">
+      <div class="header-title">Hamala Emmanuel - BRAM student at COCIS</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <h3>Makerere University</h3>
+          <p>Bachelor of Records and Archives Management (2020 - Present)</p>
+        </div>
+        <div class="education-item">
+          <h3>Emmanuel College Kazo</h3>
+          <p>Secondary Education (2013 - 2019)</p>
+        </div>
+        <div class="education-item">
+          <h3>Outspan Primary School</h3>
+          <p>Primary Education (2004 - 2013)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <h3>Site Accountant</h3>
+          <p>Reddy's Technical Services Company Limited (2023 - 2024)</p>
+        </div>
+        <div class="experience-item">
+          <h3>Student Intern</h3>
+          <p>Uganda Registration Services Bureau (URSB)</p>
+          <ul>
+            <li>Worked as Assistant Registry</li>
+            <li>Managed digital archives</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Swimming</li>
+        <li>Watching football</li>
+        <li>Listening to music</li>
+      </ul>
+    </section>
+
+    <section id="career">
+      <h2>Career Prospects</h2>
+      <ul>
+        <li>Web Developer</li>
+        <li>Building company websites</li>
+        <li>Data Analyst</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>Email: emmanuelhamala25@gmail.com</p>
+        <p>Phone: +256 785 219622</p>
+        <p>Student ID: 20/U/8828/PS</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Hamala Emmanuel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
